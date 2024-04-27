@@ -1,0 +1,16 @@
+.App{
+  width: 100vw;
+  height: 100vh ;
+  background-color: black;
+  padding-inline: 4rem;
+  
+}
+
+@media (max-width:600px){
+  .App{
+   
+    padding-inline: .1rem;
+    
+  }
+  
+}

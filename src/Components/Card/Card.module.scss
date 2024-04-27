@@ -1,0 +1,173 @@
+.wrapper {
+    width: 100%;
+    min-height: 14rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+}
+.left {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.8rem;
+    color: white;
+
+    .heading {
+        display: flex;
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        width: 100%;
+        gap: .8rem;
+        
+        .dishTypeNon{
+            min-width: 18px;
+            aspect-ratio: 1/1;
+            border: 1px solid red;
+            display: grid;
+            place-content: center;
+            .dot{
+                background-color: red;
+                width: 10px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+            }
+        }
+    
+    .dishType{
+        min-width: 18px;
+        aspect-ratio: 1/1;
+        border: 1px solid green;
+        display: grid;
+        place-content: center;
+        .dot{
+            background-color: green;
+            width: 10px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+        }
+    }
+    }
+    .discription {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(105, 101, 101);
+    }
+    .price {
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+    }
+    .warning{
+        color: red;
+        font-size: 14px;
+    }
+}
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    gap: 0.8rem;
+    justify-content: end;
+    .imgwrapper {
+        width: 10rem;
+        height: 100%;
+        max-height: 10rem;
+        object-fit: cover;
+        border-radius: 0.4rem;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 0.4rem;
+        }
+    }
+    .calories {
+        padding-block: 1rem;
+    }
+}
+.qtybutton {
+    width: 8rem;
+    height: 1.9rem;
+    display: flex;
+    background-color: green;
+    align-items: center;
+    border-radius: 1rem;
+    color: white;
+}
+.btn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .left {
+        .heading {
+            width: 100%;
+            font-size: 16px;
+      gap: .4rem;
+            .dishTypeNon{
+                min-width: 16px;
+                height: 16px;
+                border: 1px solid red;
+                display: grid;
+                place-content: center;
+                .dot{
+                    background-color: red;
+                    width: 10px;
+                    aspect-ratio: 1/1;
+                    border-radius: 50%;
+                }
+            }
+        
+        .dishType{
+            width: 16px;
+            height: 16px;
+            border: 1px solid green;
+            display: grid;
+            place-content: center;
+            .dot{
+                background-color: green;
+                width: 10px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+            }
+        }
+    }
+
+
+        
+        .discription {
+            font-size: 12px;
+        }
+        .price {
+            font-size: 14px;
+        }
+        .warning{
+            color: red;
+            font-size: 12px;
+        }
+    }
+
+    .right{
+        .imgwrapper {
+            width: 8rem;
+        }
+        .calories {
+            padding-block: 1rem;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+    
+    }
+}
